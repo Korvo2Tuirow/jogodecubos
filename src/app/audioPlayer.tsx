@@ -11,11 +11,9 @@ export const AudioPlayer = ({src, isPlaying}:Props)=>{
     const audioTag = useRef<HTMLAudioElement>(null);
     
     useEffect(()=>{
-        if(isPlaying){
+        
         audioTag.current?.play();
-        }else{
-            audioTag.current?.pause();
-        }
+       
     })
     
     
