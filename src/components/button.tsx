@@ -31,10 +31,8 @@ export const Button = () => {
             <button className="m-10 border border-black p-3 rounded-md font-bold bgBtn cursor-pointer shadow-md shadow-black hover:scale-125" onClick={teste}>
                 CLIQUE AQUI
             </button>
-
-            <audio>
-                <source src="../../public/sound/Whatsapp_Cortos.mp3" type="audio/mpeg"/>
-            </audio>
+         
+            
         </>
     );
 }
