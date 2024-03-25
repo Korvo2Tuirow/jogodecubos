@@ -3,17 +3,11 @@ import { NumRandomProvider } from "@/components/ContextNumRandom";
 import { Button } from "@/components/button";
 import { Container } from "@/components/container";
 
-
-
-
-
-const Page = () => { 
-
-     
+const Page = () => {      
 
   return (
-    <div className="flex flex-col pb-10 justify-center items-center h-screen w-full bgBody">
-      <h1 className="text-4xl font-bold shadow-md shadow-black rounded-3xl p-3 bg-gradient-to-t  from-[#fd08ff]  to-[#0cd9e7]">Jogo do Bicho</h1>
+    <div className="flex flex-col p-5 justify-center items-center h-screen w-full bgBody ">
+      <h1 className="text-4xl font-bold shadow-md shadow-black rounded-3xl p-3 bg-gradient-to-t  from-[#fd08ff]  to-[#0cd9e7] absolute top-3">Jogo do Bicho</h1>
 
     <NumRandomProvider>
         <Container />

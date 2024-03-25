@@ -4,80 +4,105 @@
 
 .bgBody{
     background-image: url("../../public/background/80175e8f1b3f1afff108bd5c0081db96.jpg");
-    background-repeat: no-repeat;
     background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
+    position: fixed;
 }
 
 .bg0{
     background-color: rgb(0, 110, 255);
     background-image: url("../../public/emoji/1f47d.png");
     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     
 }
 .bg1{
     background-color: aqua;
     background-image: url("../../public/emoji/1f42d.png");
     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .bg2{
      background-color: burlywood;
      background-image: url("../../public/emoji/1f431.png");
      background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
 }
 
 .bg3{
     background-color: chartreuse;
     background-image: url("../../public/emoji/1f435.png");
     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .bg4{
     background-color: coral;
     background-image: url("../../public/emoji/1f98a.png");
     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .bg5{
     background-color: #9100e6;
     background-image: url("../../public/emoji/1f436.png");
     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .bg6{
     background-color: fuchsia;
     background-image: url("../../public/emoji/1f437.png");
     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .bg7{
     background-color: #fd0404;
     background-image: url("../../public/emoji/1f438.png");
     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .bg8{
     background-color: gold;
     background-image: url("../../public/emoji/1f981.png");
     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .bg9{
     background-color: #ffffff;
     background-image: url("../../public/emoji/1f43c.png");
     background-position: center;
+    background: no-repeat, cover;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .bg10{    
     background-color: #001aff;
     background-image: url("../../public/emoji/1f42f.png");
     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .cssDefault{
-    width: 100%;
-    height: 100%; 
+    width: 100%; /* Você pode ajustar esse valor conforme necessário */
+    padding-top: 100%; /* Isso mantém a proporção 1:1 (altura = largura) */
+    position: relative;
     border: 1px solid #0000002d;
     align-items: center;
     display: flex;
