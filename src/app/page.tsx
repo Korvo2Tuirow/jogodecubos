@@ -6,6 +6,7 @@ import { Container } from "@/components/container";
 
 
 
+
 const Page = () => { 
 
      
@@ -17,8 +18,7 @@ const Page = () => {
     <NumRandomProvider>
         <Container />
         <Button />
-       
-       
+           
     </NumRandomProvider>
      
     </div>

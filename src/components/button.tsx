@@ -1,5 +1,5 @@
 "use client"
-import { useContext, useEffect, useState } from 'react';
+import { useContext, useState } from 'react';
 import { NumContext } from './ContextNumRandom';
 
 
@@ -24,7 +24,7 @@ export const Button = () => {
 
         NumCtx?.setNumRandomProv(numRandom);  
        
-        NumCtx?.setAnima(false)
+        NumCtx?.setAnima(true)
     
 
     }
