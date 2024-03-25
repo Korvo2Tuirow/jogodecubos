@@ -70,20 +70,8 @@
     animation:flip-horizontal-bottom .7s cubic-bezier(.455,.03,.515,.955)  both;
 }
 
+@keyframes flip-horizontal-bottom{0%{transform:rotateX(0)}50%{transform:rotateX(-180deg)}100%{transform:rotateX(100)} }
 
-@keyframes flip-horizontal-bottom{0%{transform:rotateX(0)}50%{transform:rotateX(-180deg)}100%{transform:rotateX(100)} };
-
-.shake-top{-webkit-animation:shake-top .8s cubic-bezier(.455,.03,.515,.955) both;animation:shake-top .8s cubic-bezier(.455,.03,.515,.955) both}
-
-@-webkit-keyframes shake-top{0%,100%{-webkit-transform:rotate(0deg);transform:rotate(0deg);-webkit-transform-origin:50% 0;transform-origin:50% 0}10%{-webkit-transform:rotate(2deg);transform:rotate(2deg)}20%,40%,60%{-webkit-transform:rotate(-4deg);transform:rotate(-4deg)}30%,50%,70%{-webkit-transform:rotate(4deg);transform:rotate(4deg)}80%{-webkit-transform:rotate(-2deg);transform:rotate(-2deg)}90%{-webkit-transform:rotate(2deg);transform:rotate(2deg)}}@keyframes shake-top{0%,100%{-webkit-transform:rotate(0deg);transform:rotate(0deg);-webkit-transform-origin:50% 0;transform-origin:50% 0}10%{-webkit-transform:rotate(2deg);transform:rotate(2deg)}20%,40%,60%{-webkit-transform:rotate(-4deg);transform:rotate(-4deg)}30%,50%,70%{-webkit-transform:rotate(4deg);transform:rotate(4deg)}80%{-webkit-transform:rotate(-2deg);transform:rotate(-2deg)}90%{-webkit-transform:rotate(2deg);transform:rotate(2deg)}}
-
-
-.rotatescaleup{animation:rotate-scale-up .65s linear both}
-
-@keyframes rotate-scale-up{0%{transform:scale(1) rotateZ(0)}50%{transform:scale(2) rotateZ(180deg)}100%{transform:scale(1) rotateZ(360deg)}}
-
-
-
-.shakelr{animation:shake-lr .7s cubic-bezier(.455,.03,.515,.955) both}
+.shakelr{animation:shake-lr 1s cubic-bezier(.455,.03,.515,.955) both}
 
 @keyframes shake-lr{0%,100%{transform:rotate(0deg);transform-origin:50% 50%}10%{transform:rotate(8deg)}20%,40%,60%{transform:rotate(-10deg)}30%,50%,70%{transform:rotate(10deg)}80%{transform:rotate(-8deg)}90%{transform:rotate(8deg)}}
