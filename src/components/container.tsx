@@ -66,7 +66,7 @@ export const Container = () => {
                 {c3?.map(e => (<div className={`bg${e.toString()} cssDefault ${!NumCtx?.anima && animaCol3}`}></div>))}
             </div>
 
-            <AudioPlayer src="../../public/sound/WhatsappCortos.mp3"
+            <AudioPlayer src="./sound/WhatsappCortos.mp3"
                 isPlaying={playing} />
 
         </div>
