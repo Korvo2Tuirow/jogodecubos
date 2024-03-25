@@ -67,7 +67,7 @@
 /*Animação*/
 
 .anima {
-    animation:flip-horizontal-bottom .5s cubic-bezier(.455,.03,.515,.955) both;
+    animation:flip-horizontal-bottom .7s cubic-bezier(.455,.03,.515,.955) both;
 }
 
 
