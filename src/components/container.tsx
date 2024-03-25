@@ -55,15 +55,15 @@ export const Container = () => {
     return (
         <div className={`border bgBtn shadow-lg shadow-black p-4 flex mt-10 border-black max-w-[500px] w-[90%] h-[500px] max-h-[90%] `}>
             <div className="w-[33.3%] flex flex-col ">
-                {c1?.map(e => (<div className={`bg${e.toString()} cssDefault ${!NumCtx?.anima && animaCol1}`} >{e}</div>))}
+                {c1?.map(e => (<div className={`bg${e.toString()} cssDefault ${!NumCtx?.anima && animaCol1}`} ></div>))}
             </div>
 
             <div className="w-[33.3%] flex flex-col">
-                {c2?.map(e => (<div className={`bg${e.toString()}  cssDefault ${!NumCtx?.anima && animaCol2}`}>{e}</div>))}
+                {c2?.map(e => (<div className={`bg${e.toString()}  cssDefault ${!NumCtx?.anima && animaCol2}`}></div>))}
             </div>
 
             <div className="w-[33.3%] flex flex-col">
-                {c3?.map(e => (<div className={`bg${e.toString()} cssDefault ${!NumCtx?.anima && animaCol3}`}>{e}</div>))}
+                {c3?.map(e => (<div className={`bg${e.toString()} cssDefault ${!NumCtx?.anima && animaCol3}`}></div>))}
             </div>
 
             <AudioPlayer src="../../public/sound/WhatsappCortos.mp3"

@@ -5,45 +5,68 @@
 
 .bg0{
     background-color: rgb(0, 110, 255);
+    background-image: url("../../public/emoji/1f47d.png");
+    background-position: center;
+    
 }
 .bg1{
     background-color: aqua;
+    background-image: url("../../public/emoji/1f42d.png");
+    background-position: center;
 }
 
 .bg2{
      background-color: burlywood;
+     background-image: url("../../public/emoji/1f431.png");
+     background-position: center;
 }
 
 .bg3{
     background-color: chartreuse;
+    background-image: url("../../public/emoji/1f435.png");
+    background-position: center;
 }
 
 .bg4{
     background-color: coral;
+    background-image: url("../../public/emoji/1f98a.png");
+    background-position: center;
 }
 
 .bg5{
     background-color: #9100e6;
+    background-image: url("../../public/emoji/1f436.png");
+    background-position: center;
 }
 
 .bg6{
     background-color: fuchsia;
+    background-image: url("../../public/emoji/1f437.png");
+    background-position: center;
 }
 
 .bg7{
     background-color: #fd0404;
+    background-image: url("../../public/emoji/1f438.png");
+    background-position: center;
 }
 
 .bg8{
     background-color: gold;
+    background-image: url("../../public/emoji/1f981.png");
+    background-position: center;
 }
 
 .bg9{
     background-color: #ffffff;
+    background-image: url("../../public/emoji/1f43c.png");
+    background-position: center;
 }
 
 .bg10{    
     background-color: #001aff;
+    background-image: url("../../public/emoji/1f42f.png");
+    background-position: center;
 }
 
 .cssDefault{
