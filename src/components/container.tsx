@@ -1,7 +1,7 @@
 
 import React, { useContext, useEffect, useState } from "react";
 import { NumContext } from "./ContextNumRandom";
-import { AudioPlayer } from "@/app/audioPlayer";
+import { AudioPlayer } from "@/components/audioPlayer";
 
 export const Container = () => {
 
