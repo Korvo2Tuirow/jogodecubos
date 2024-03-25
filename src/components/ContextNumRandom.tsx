@@ -9,7 +9,7 @@ type ContextType={
 }
 
 const initialNumRandom = Array.from({ length: 9 }, () => Math.floor(Math.random() * 10 + 1));
-console.log(initialNumRandom)
+
 
 export const NumContext = createContext<ContextType | null>(null);
 

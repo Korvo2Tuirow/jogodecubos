@@ -2,6 +2,7 @@
 import { NumRandomProvider } from "@/components/ContextNumRandom";
 import { Button } from "@/components/button";
 import { Container } from "@/components/container";
+import { Verif } from "@/components/verficador";
 
 const Page = () => {      
 
@@ -12,6 +13,7 @@ const Page = () => {
     <NumRandomProvider>
         <Container />
         <Button />
+        <Verif/>
            
     </NumRandomProvider>
      
