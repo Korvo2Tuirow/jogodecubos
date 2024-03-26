@@ -1,4 +1,4 @@
-import { useContext } from "react"
+import { useContext, useEffect } from "react"
 import { NumContext} from "./ContextNumRandom";
 
 
@@ -24,10 +24,48 @@ export const Verif = ()=>{
         numProv?.numRandomProv[8]  // Elemento no índice 5
     ];
 
-    console.log( numProv?.numRandomProv);
-    console.log(novoArrayA);
-    console.log(novoArrayB);
-    console.log(novoArrayC);
+    const linha1 = novoArrayA.every(v1 => v1 === novoArrayA[0]);
+    const linha2 = novoArrayB.every(v1 => v1 === novoArrayB[0]);
+    const linha3 = novoArrayC.every(v1 => v1 === novoArrayC[0]);
+
+    
+    
+    if(linha1) numProv?.setAnimaLinha1(true) ;
+    if(linha2) numProv?.setAnimaLinha2(true) ;
+    if(linha3) numProv?.setAnimaLinha3(true) ;
+
+    useEffect( ()=>{
+        
+        let idA1 = document.getElementById("idA0");
+        let idB1 = document.getElementById("idB0");
+        let idC1 = document.getElementById("idC0");      //console.log(idA1, idB1, idC1)
+
+        let idA2 = document.getElementById("idA1");
+        let idB2 = document.getElementById("idB1");
+        let idC2 = document.getElementById("idC1");
+        //console.log(idA2, idB2, idC2);
+
+
+        let idA3 = document.getElementById("idA2");
+        let idB3 = document.getElementById("idB2");
+        let idC3 = document.getElementById("idC2");
+
+    })
+    
+
+
+
+
+
+
+
+
+
+
+
+
+   
+   
     return(
         <div></div>
     )

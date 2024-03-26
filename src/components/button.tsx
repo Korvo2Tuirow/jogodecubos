@@ -3,6 +3,7 @@ import { useContext, useState } from 'react';
 import { NumContext } from './ContextNumRandom';
 import { AudioPlayer } from './audioPlayer';
 
+
 export const Button = () => {
 
     const NumCtx = useContext(NumContext);
@@ -28,8 +29,7 @@ export const Button = () => {
         NumCtx?.setNumRandomProv(numRandom);  
        
         NumCtx?.setAnima(true)
-        setPlaying(true)
-    
+        setPlaying(true)    
     }
 
     return (

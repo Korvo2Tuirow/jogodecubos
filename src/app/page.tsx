@@ -13,8 +13,7 @@ const Page = () => {
     <NumRandomProvider>
         <Container />
         <Button />
-        <Verif/>
-           
+          
     </NumRandomProvider>
      
     </div>
