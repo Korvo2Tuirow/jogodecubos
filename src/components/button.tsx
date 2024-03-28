@@ -6,9 +6,9 @@ import { AudioPlayer } from './audioPlayer';
 
 export const Button = () => {
 
-    const NumCtx = useContext(NumContext);
+    const Ctx = useContext(NumContext);
 
-    const initialNumRandom = Array.from({ length: 9 }, () => Math.floor(Math.random() * 10 + 1));
+    const initialNumRandom = Array.from({ length: 9 }, () => Math.floor(Math.random() * 9));
 
     const [numRandom, setNumRandom] = useState(initialNumRandom);
 
@@ -18,17 +18,17 @@ export const Button = () => {
         const audioPlay = () => {
             const audio = new Audio();
             audio.play();
+        
         }
     
         setNumRandom([])
         setNumRandom(prevNumRandom => [
             ...prevNumRandom,
-            ...Array.from({ length: 9 }, () => Math.floor(Math.random() * 10 + 1))
+            ...Array.from({ length: 9 }, () => Math.floor(Math.random() * 9))
         ]);
 
-        NumCtx?.setNumRandomProv(numRandom);  
-       
-        NumCtx?.setAnima(true)
+        Ctx?.setNumRandomProv(numRandom);  
+             
         setPlaying(true)    
     }
 

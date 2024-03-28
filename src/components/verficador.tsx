@@ -1,73 +1,98 @@
-import { useContext, useEffect } from "react"
+import { useContext, useEffect, useState } from "react"
 import { NumContext} from "./ContextNumRandom";
+import { AudioPlayer } from "./audioPlayer";
+
 
 
 export const Verif = ()=>{
  
-    const numProv = useContext(NumContext);
-
-    let novoArrayA = [
-        numProv?.numRandomProv[0], // Elemento no índice 0
-        numProv?.numRandomProv[3], // Elemento no índice 2
-        numProv?.numRandomProv[6]  // Elemento no índice 5
-    ];
-
-    let novoArrayB = [
-        numProv?.numRandomProv[1], // Elemento no índice 0
-        numProv?.numRandomProv[4], // Elemento no índice 2
-        numProv?.numRandomProv[7]  // Elemento no índice 5
-    ];
-
-    let novoArrayC = [
-        numProv?.numRandomProv[2], // Elemento no índice 0
-        numProv?.numRandomProv[5], // Elemento no índice 2
-        numProv?.numRandomProv[8]  // Elemento no índice 5
-    ];
-
-    const linha1 = novoArrayA.every(v1 => v1 === novoArrayA[0]);
-    const linha2 = novoArrayB.every(v1 => v1 === novoArrayB[0]);
-    const linha3 = novoArrayC.every(v1 => v1 === novoArrayC[0]);
-
+    const Ctx = useContext(NumContext);
+    const[playing, setPlaying] = useState(false)
     
+    const audioPlay = () => {
+        const audio = new Audio('./sound/WhatsappCortos.mp3');
+        audio.play();
+    }
     
-    if(linha1) numProv?.setAnimaLinha1(true) ;
-    if(linha2) numProv?.setAnimaLinha2(true) ;
-    if(linha3) numProv?.setAnimaLinha3(true) ;
+    const l1 = Ctx?.numRandomProv.slice(0, 3);
+    const l2 = Ctx?.numRandomProv.slice(3, 6);
+    const l3 = Ctx?.numRandomProv.slice(6, 9);
+    const c1 = [Ctx?.numRandomProv[0],Ctx?.numRandomProv[3],Ctx?.numRandomProv[6]];
+    const c2 = [Ctx?.numRandomProv[1],Ctx?.numRandomProv[4],Ctx?.numRandomProv[7]];
+    const c3 = [Ctx?.numRandomProv[2],Ctx?.numRandomProv[5],Ctx?.numRandomProv[8]];
+    
+    useEffect(() => {
 
-    useEffect( ()=>{
         
-        let idA1 = document.getElementById("idA0");
-        let idB1 = document.getElementById("idB0");
-        let idC1 = document.getElementById("idC0");      //console.log(idA1, idB1, idC1)
+        if (c1?.every(v1 => v1 === c1[0])) {
+            setPlaying(playing)
+            audioPlay();
+            Ctx?.setAnimaC1("shakelr")
+            document.getElementById("id0")?.classList.add(`${ Ctx?.animaC1}`);
+            document.getElementById("id3")?.classList.add(`${ Ctx?.animaC1}`);  
+            document.getElementById("id6")?.classList.add(`${ Ctx?.animaC1}`);             
 
-        let idA2 = document.getElementById("idA1");
-        let idB2 = document.getElementById("idB1");
-        let idC2 = document.getElementById("idC1");
-        //console.log(idA2, idB2, idC2);
-
-
-        let idA3 = document.getElementById("idA2");
-        let idB3 = document.getElementById("idB2");
-        let idC3 = document.getElementById("idC2");
-
-    })
-    
-
-
-
-
-
-
-
-
-
-
-
-
+           
+        }else{Ctx?.setAnimaC1("Anima")};
+        
+        if (c2?.every(v2 => v2 === c2[0])) {
+            setPlaying(playing)
+            audioPlay();
+            Ctx?.setAnimaC2("shakelr")
+            document.getElementById("id1")?.classList.add(`${Ctx?.animaC2}`);
+            document.getElementById("id4")?.classList.add(`${Ctx?.animaC2}`);  
+            document.getElementById("id7")?.classList.add(`${Ctx?.animaC2}`);     
+                    
+        }else{Ctx?.setAnimaC2("anima")};
    
-   
+        if (c3?.every(v3 => v3 === c3[0])) {
+            setPlaying(playing)
+            audioPlay();
+            Ctx?.setAnimaC3("shakelr")
+            document.getElementById("id2")?.classList.add(`${Ctx?.animaC3}`);
+            document.getElementById("id5")?.classList.add(`${Ctx?.animaC3}`);  
+            document.getElementById("id8")?.classList.add(`${Ctx?.animaC3}`);     
+                 
+        }else{Ctx?.setAnimaC3("anima")}; 
+
+        if (l1?.every(v4 => v4 === l1[0])) {
+            setPlaying(playing)
+            audioPlay();  
+            Ctx?.setAnimaH1("shakelr")
+            document.getElementById("id0")?.classList.add(`${Ctx?.animaH1}`);
+            document.getElementById("id1")?.classList.add(`${Ctx?.animaH1}`);  
+            document.getElementById("id2")?.classList.add(`${Ctx?.animaH1}`);
+        } else{Ctx?.setAnimaH1("anima")}; 
+
+
+        if (l2?.every(v5 => v5 === l2[0])) {
+            setPlaying(playing)
+            audioPlay();
+            Ctx?.setAnimaH2("shakelr")           
+            document.getElementById("id3")?.classList.add(`${Ctx?.animaH2}`);
+            document.getElementById("id4")?.classList.add(`${Ctx?.animaH2}`);  
+            document.getElementById("id5")?.classList.add(`${Ctx?.animaH2}`);
+        } else{Ctx?.setAnimaH2("anima")}; 
+
+
+        if (l3?.every(v6 => v6 === l3[0])) {
+            setPlaying(playing)
+            audioPlay();
+            Ctx?.setAnimaH3("shakelr")           
+            document.getElementById("id6")?.classList.add(`${Ctx?.animaH3}`);
+            document.getElementById("id7")?.classList.add(`${Ctx?.animaH3}`);  
+            document.getElementById("id8")?.classList.add(`${Ctx?.animaH3}`);
+        } else{Ctx?.setAnimaH3("anima")}; 
+
+     
+    });  
+
     return(
-        <div></div>
+        <div>
+            
+            <AudioPlayer src="./sound/WhatsappCortos.mp3"
+                isPlaying={playing} />
+        </div>
     )
     
 
