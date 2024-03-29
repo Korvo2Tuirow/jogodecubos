@@ -1,10 +1,14 @@
 
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import { NumContext } from "./ContextNumRandom";
 
 export const Container = () => {
 
-    const Ctx = useContext(NumContext);    
+    const Ctx = useContext(NumContext);   
+    
+    useEffect(()=>{
+     Ctx?.setAnima("anima")   
+    },Ctx?.numRandomProv)
 
     return (
         <div className={`border bgBtn  justify-center items-center shadow-lg shadow-black p-4 flex m-10 border-black  w-[100%] max-w-[493px] h-auto max-h-[493px]`}>

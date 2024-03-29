@@ -121,10 +121,14 @@
 /*Animação*/
 
 .anima {
-    animation:flip-horizontal-bottom .7s cubic-bezier(.455,.03,.515,.955)  both;
+    animation:flip-horizontal-bottom .5s cubic-bezier(.455,.03,.515,.955)  both;
 }
 
-@keyframes flip-horizontal-bottom{0%{transform:rotateX(0)}50%{transform:rotateX(-180deg)}100%{transform:rotateX(100)} }
+@keyframes flip-horizontal-bottom{
+0%{transform:rotateX(0)}
+50%{transform:rotateX(-180deg)}
+100%{transform:rotateX(100)};
+}
 
 .shakelr{animation:shake-lr 1s cubic-bezier(.455,.03,.515,.955) both}
 

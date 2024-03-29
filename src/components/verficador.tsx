@@ -33,7 +33,7 @@ export const Verif = ()=>{
             document.getElementById("id6")?.classList.add(`${ Ctx?.animaC1}`);             
 
            
-        }else{Ctx?.setAnimaC1("Anima")};
+        }else{Ctx?.setAnimaC1("null")};
         
         if (c2?.every(v2 => v2 === c2[0])) {
             setPlaying(playing)
@@ -43,7 +43,7 @@ export const Verif = ()=>{
             document.getElementById("id4")?.classList.add(`${Ctx?.animaC2}`);  
             document.getElementById("id7")?.classList.add(`${Ctx?.animaC2}`);     
                     
-        }else{Ctx?.setAnimaC2("anima")};
+        }else{Ctx?.setAnimaC2("null")};
    
         if (c3?.every(v3 => v3 === c3[0])) {
             setPlaying(playing)
@@ -53,7 +53,7 @@ export const Verif = ()=>{
             document.getElementById("id5")?.classList.add(`${Ctx?.animaC3}`);  
             document.getElementById("id8")?.classList.add(`${Ctx?.animaC3}`);     
                  
-        }else{Ctx?.setAnimaC3("anima")}; 
+        }else{Ctx?.setAnimaC3("null")}; 
 
         if (l1?.every(v4 => v4 === l1[0])) {
             setPlaying(playing)
@@ -62,7 +62,7 @@ export const Verif = ()=>{
             document.getElementById("id0")?.classList.add(`${Ctx?.animaH1}`);
             document.getElementById("id1")?.classList.add(`${Ctx?.animaH1}`);  
             document.getElementById("id2")?.classList.add(`${Ctx?.animaH1}`);
-        } else{Ctx?.setAnimaH1("anima")}; 
+        } else{Ctx?.setAnimaH1("null")}; 
 
 
         if (l2?.every(v5 => v5 === l2[0])) {
@@ -72,7 +72,7 @@ export const Verif = ()=>{
             document.getElementById("id3")?.classList.add(`${Ctx?.animaH2}`);
             document.getElementById("id4")?.classList.add(`${Ctx?.animaH2}`);  
             document.getElementById("id5")?.classList.add(`${Ctx?.animaH2}`);
-        } else{Ctx?.setAnimaH2("anima")}; 
+        } else{Ctx?.setAnimaH2("null")}; 
 
 
         if (l3?.every(v6 => v6 === l3[0])) {
@@ -82,7 +82,7 @@ export const Verif = ()=>{
             document.getElementById("id6")?.classList.add(`${Ctx?.animaH3}`);
             document.getElementById("id7")?.classList.add(`${Ctx?.animaH3}`);  
             document.getElementById("id8")?.classList.add(`${Ctx?.animaH3}`);
-        } else{Ctx?.setAnimaH3("anima")}; 
+        } else{Ctx?.setAnimaH3("null")}; 
 
      
     });  

@@ -28,7 +28,7 @@ export const Button = () => {
         ]);
 
         Ctx?.setNumRandomProv(numRandom);  
-             
+        Ctx?.setAnima("null");
         setPlaying(true)    
     }
 

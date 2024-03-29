@@ -20,8 +20,6 @@ type ContextType={
     setAnima:(b:string)=>void ;
 }
 
-//const initialNumRandom = Array.from({ length: 9 }, () => Math.floor(Math.random() * 9));
-
 export const NumContext = createContext<ContextType | null>(null);
 
 export const NumRandomProvider = ({children}:{children: ReactNode})=>{
