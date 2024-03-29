@@ -30,7 +30,9 @@ export const Verif = ()=>{
             Ctx?.setAnimaC1("shakelr")
             document.getElementById("id0")?.classList.add(`${ Ctx?.animaC1}`);
             document.getElementById("id3")?.classList.add(`${ Ctx?.animaC1}`);  
-            document.getElementById("id6")?.classList.add(`${ Ctx?.animaC1}`);             
+            document.getElementById("id6")?.classList.add(`${ Ctx?.animaC1}`); 
+            Ctx?.setFezTrio(true);
+                        
 
            
         }else{Ctx?.setAnimaC1("null")};
@@ -41,8 +43,8 @@ export const Verif = ()=>{
             Ctx?.setAnimaC2("shakelr")
             document.getElementById("id1")?.classList.add(`${Ctx?.animaC2}`);
             document.getElementById("id4")?.classList.add(`${Ctx?.animaC2}`);  
-            document.getElementById("id7")?.classList.add(`${Ctx?.animaC2}`);     
-                    
+            document.getElementById("id7")?.classList.add(`${Ctx?.animaC2}`); 
+            Ctx?.setFezTrio(true);                    
         }else{Ctx?.setAnimaC2("null")};
    
         if (c3?.every(v3 => v3 === c3[0])) {
@@ -52,7 +54,7 @@ export const Verif = ()=>{
             document.getElementById("id2")?.classList.add(`${Ctx?.animaC3}`);
             document.getElementById("id5")?.classList.add(`${Ctx?.animaC3}`);  
             document.getElementById("id8")?.classList.add(`${Ctx?.animaC3}`);     
-                 
+            Ctx?.setFezTrio(true);
         }else{Ctx?.setAnimaC3("null")}; 
 
         if (l1?.every(v4 => v4 === l1[0])) {
@@ -62,6 +64,7 @@ export const Verif = ()=>{
             document.getElementById("id0")?.classList.add(`${Ctx?.animaH1}`);
             document.getElementById("id1")?.classList.add(`${Ctx?.animaH1}`);  
             document.getElementById("id2")?.classList.add(`${Ctx?.animaH1}`);
+            Ctx?.setFezTrio(true);
         } else{Ctx?.setAnimaH1("null")}; 
 
 
@@ -72,6 +75,7 @@ export const Verif = ()=>{
             document.getElementById("id3")?.classList.add(`${Ctx?.animaH2}`);
             document.getElementById("id4")?.classList.add(`${Ctx?.animaH2}`);  
             document.getElementById("id5")?.classList.add(`${Ctx?.animaH2}`);
+            Ctx?.setFezTrio(true);
         } else{Ctx?.setAnimaH2("null")}; 
 
 
@@ -82,9 +86,10 @@ export const Verif = ()=>{
             document.getElementById("id6")?.classList.add(`${Ctx?.animaH3}`);
             document.getElementById("id7")?.classList.add(`${Ctx?.animaH3}`);  
             document.getElementById("id8")?.classList.add(`${Ctx?.animaH3}`);
+            Ctx?.setFezTrio(true);
         } else{Ctx?.setAnimaH3("null")}; 
 
-     
+  
     });  
 
     return(

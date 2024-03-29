@@ -7,7 +7,8 @@ export const Container = () => {
     const Ctx = useContext(NumContext);   
     
     useEffect(()=>{
-     Ctx?.setAnima("anima")   
+     Ctx?.setAnima("anima")  
+     console.log(Ctx?.fezTrio);   
     },Ctx?.numRandomProv)
 
     return (

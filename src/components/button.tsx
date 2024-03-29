@@ -18,9 +18,10 @@ export const Button = () => {
 
         const audioPlay = () => {
             const audio = new Audio();
-            audio.play();
-        
+            audio.play();        
         }
+
+        Ctx?.setValor(Ctx?.valor -1);
     
         setNumRandom([])
         setNumRandom(prevNumRandom => [
@@ -30,7 +31,9 @@ export const Button = () => {
 
         Ctx?.setNumRandomProv(numRandom);  
         Ctx?.setAnima("null");
-        setPlaying(true)    
+        setPlaying(true)  
+       
+       
         
     }
 

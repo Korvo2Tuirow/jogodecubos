@@ -10,7 +10,8 @@ type Props={
 export const Aposta = ()=>{
     
     const [newValor, setNewValor] = useState();
-    const Ctx = useContext(NumContext);
+    const Ctx = useContext(NumContext);  
+
     
     const modal = () =>{
         const exit = document.getElementById("modal");
