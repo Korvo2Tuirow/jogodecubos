@@ -10,6 +10,7 @@ type ContextType={
     animaH1: string | void;
     animaH2: string | void;
     animaH3: string | void;
+    valor: number;
     setAnimaC1:(b:string)=>void;
     setAnimaC2:(b:string)=>void;
     setAnimaC3:(b:string)=>void;
@@ -18,6 +19,7 @@ type ContextType={
     setAnimaH3:(b:string)=>void;
     setNumRandomProv: (n:number[]) => void ;
     setAnima:(b:string)=>void ;
+    setValor:(b:number)=>void;
 }
 
 export const NumContext = createContext<ContextType | null>(null);
@@ -32,10 +34,11 @@ export const NumRandomProvider = ({children}:{children: ReactNode})=>{
     const [animaH1, setAnimaH1] = useState("")
     const [animaH2, setAnimaH2] = useState("")
     const [animaH3, setAnimaH3] = useState("")
+    const [valor, setValor] = useState(0)
 
     
     return(
-        <NumContext.Provider value={{numRandomProv,setNumRandomProv, anima, setAnima, animaC1, setAnimaC1, animaC2, setAnimaC2, animaC3,setAnimaC3,animaH1, setAnimaH1, animaH2, setAnimaH2, animaH3, setAnimaH3}} >
+        <NumContext.Provider value={{numRandomProv,setNumRandomProv, anima, setAnima, animaC1, setAnimaC1, animaC2, setAnimaC2, animaC3,setAnimaC3,animaH1, setAnimaH1, animaH2, setAnimaH2, animaH3, setAnimaH3, valor, setValor}} >
             {children}
         </NumContext.Provider>
     )

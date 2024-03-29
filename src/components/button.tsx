@@ -12,7 +12,8 @@ export const Button = () => {
 
     const [numRandom, setNumRandom] = useState(initialNumRandom);
 
-    const[playing, setPlaying] = useState(false)
+    const[playing, setPlaying] = useState(false);
+
     const teste = () => {
 
         const audioPlay = () => {
@@ -30,6 +31,7 @@ export const Button = () => {
         Ctx?.setNumRandomProv(numRandom);  
         Ctx?.setAnima("null");
         setPlaying(true)    
+        
     }
 
     return (

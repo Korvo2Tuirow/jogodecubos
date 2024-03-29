@@ -1,4 +1,5 @@
 "use client"
+import { Modal } from "@/components/Modal";
 import { NumRandomProvider } from "@/components/ContextNumRandom";
 import { Button } from "@/components/button";
 import { Container } from "@/components/container";
@@ -14,6 +15,7 @@ const Page = () => {
         <Container />
         <Button />
         <Verif/>
+        <Modal/>
     </NumRandomProvider>
      
     </div>
