@@ -4,7 +4,7 @@ import { NumContext } from "./ContextNumRandom";
 
 export const Modal = () => {
 
-    const valorCtx = useContext(NumContext);
+    const Ctx = useContext(NumContext);
 
     const [valor, setValor] = useState("");
 
@@ -15,8 +15,7 @@ export const Modal = () => {
 
             const exit = document.getElementById("modal");
             exit?.classList.add("hidden");
-            valorCtx?.setValor(newValor);  
-           
+            Ctx?.setValor(newValor);             
         }
     }
 
@@ -26,6 +25,7 @@ export const Modal = () => {
             <div id="addCash" className={`border-4 justify-center items-center top-[20%] p-4 flex flex-col m-10  border-white bgBtn absolute rounded-2xl w-[90%] max-w-[500px] h-[100%] max-h-[200px]`}>
 
                 <input type="number"
+                    id="inputValor"
                     min={1}
                     className="p-3 flex rounded-lg text-lg w-[95%] relative"
                     step="0.01"
@@ -36,7 +36,6 @@ export const Modal = () => {
                 />
 
                 <button onClick={add} className="p-3 border font-bold hover:scale-110 border-black rounded-md mt-5 bg-[#57f5e0]" >APOSTE</button>
-
 
             </div>
         </div>

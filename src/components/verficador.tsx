@@ -89,7 +89,7 @@ export const Verif = ()=>{
             Ctx?.setFezTrio(true);
         } else{Ctx?.setAnimaH3("null")}; 
 
-  
+        
     });  
 
     return(

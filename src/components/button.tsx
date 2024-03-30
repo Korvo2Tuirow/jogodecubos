@@ -20,9 +20,13 @@ export const Button = () => {
             const audio = new Audio();
             audio.play();        
         }
+        if(Ctx?.fezTrio){
+            Ctx.setValor(Ctx?.valor + 10)
+            Ctx.setFezTrio(false)
+        }else{
+            Ctx?.setValor(Ctx?.valor -1);
+        }
 
-        Ctx?.setValor(Ctx?.valor -1);
-    
         setNumRandom([])
         setNumRandom(prevNumRandom => [
             ...prevNumRandom,
