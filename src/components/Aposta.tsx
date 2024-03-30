@@ -1,4 +1,4 @@
-import { useContext, useEffect, useState } from "react"
+import { useContext } from "react"
 import { NumContext } from "./ContextNumRandom";
 
 export const Aposta = ()=>{    

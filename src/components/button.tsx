@@ -43,7 +43,7 @@ export const Button = () => {
 
     return (
         <>
-            <button className="m-10 border border-black p-3 rounded-md font-bold bgBtn cursor-pointer shadow-md shadow-black hover:scale-125" onClick={teste}>
+            <button className="m-10 border border-gray-500 p-3 rounded-md font-bold bg-bkack/50 text-gray-500 cursor-pointer shadow-md shadow-[#207] hover:scale-125" onClick={teste}>
                 CLIQUE AQUI
             </button>
 

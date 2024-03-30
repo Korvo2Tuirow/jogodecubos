@@ -3,8 +3,7 @@
 @tailwind utilities;
 
 .bgBody{
-    background-image: url("../../public/background/80175e8f1b3f1afff108bd5c0081db96.jpg");
-    background-position: center;
+    background: linear-gradient(90deg, rgba(32,0,119,1) 0%, rgba(0,0,0,1) 52%);
     background-repeat: no-repeat;
     background-size: cover;
     position: fixed;
@@ -109,13 +108,13 @@
     justify-content: center;
     font-weight: bolder;
     font-size: 30px;
-    border-radius: 20px;
+   
     box-shadow: black 2px 2px 10px 5px;
    
 }
 .bgBtn{
-    background: linear-gradient(90deg, rgba(5,255,126,1) 0%, #fd08ff 49%, rgba(0,255,248,1) 100%);
-    border-radius: 20px;
+    background: linear-gradient(90deg, #200077 0%, #000000 52%);
+    
 }
 
 /*Animação*/
