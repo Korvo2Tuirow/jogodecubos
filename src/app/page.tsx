@@ -10,7 +10,7 @@ const Page = () => {
 
   return (
     <div className="flex flex-col p-5 justify-center items-center h-screen w-full bgBody ">
-      <h1 className="text-4xl font-bold shadow-[#207] shadow-lg  p-3 bg-gradient-to-r  from-[#000]  to-[#207] border-2 rounded-md border-gray-500 absolute top-3 text-gray-500">Jogo do Bicho</h1>
+      <h1 className="rounded-md border-4 border-[#1808ff] justify-center  text-4xl font-bold p-3 bg-gradient-to-r  from-[#1b1179]  to-[#1808ff]  absolute top-3 text-white">Jogo do Bicho</h1>
 
     <NumRandomProvider>
         <Container />

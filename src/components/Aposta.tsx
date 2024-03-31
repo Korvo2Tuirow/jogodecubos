@@ -7,8 +7,7 @@ export const Aposta = ()=>{
     
     const modal = () =>{
         const exit = document.getElementById("modal");
-        exit?.classList.remove("hidden");  
-        
+        exit?.classList.remove("hidden");          
         
     }
 

@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .bgBody{
-    background: linear-gradient(90deg, rgba(32,0,119,1) 0%, rgba(0,0,0,1) 52%);
+    background: linear-gradient(90deg, #1808ff 0%, #0e0f4b 52%);
     background-repeat: no-repeat;
     background-size: cover;
     position: fixed;
@@ -113,7 +113,7 @@
    
 }
 .bgBtn{
-    background: linear-gradient(90deg, #200077 0%, #000000 52%);
+    background: linear-gradient(90deg, #1808ff 0%, #0e0f4b 52%);
     
 }
 

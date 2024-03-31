@@ -21,7 +21,7 @@ export const Button = () => {
             audio.play();        
         }
         if(Ctx?.fezTrio){
-            Ctx.setValor(Ctx?.valor + 10)
+            Ctx.setValor(Ctx?.valor + 10);            
             Ctx.setFezTrio(false)
         }else{
             Ctx?.setValor(Ctx?.valor -1);
@@ -43,7 +43,7 @@ export const Button = () => {
 
     return (
         <>
-            <button className="m-10 border border-gray-500 p-3 rounded-md font-bold bg-bkack/50 text-gray-500 cursor-pointer shadow-md shadow-[#207] hover:scale-125" onClick={teste}>
+            <button className="m-10 border-4 border-[#1808ff] p-3 rounded-md font-bold  bg-gradient-to-r  from-[#1b1179]  to-[#1808ff]  text-white cursor-pointer shadow-md shadow-[#207] hover:scale-125" onClick={teste}>
                 CLIQUE AQUI
             </button>
 

@@ -22,7 +22,7 @@ export const Modal = () => {
     return (
         <div id="modal" className="w-screen h-screen absolute flex justify-center items-center z-50 bg-black/90">      
 
-            <div id="addCash" className={`border-4 justify-center items-center top-[20%] p-4 flex flex-col m-10  border-gray-500 bgBtn absolute rounded-2xl w-[90%] max-w-[500px] h-[100%] max-h-[200px]`}>
+            <div id="addCash" className={`border-4 justify-center items-center top-[20%] p-4 flex flex-col m-10  border-[#3d7df5] bgBtn absolute rounded-2xl w-[90%] max-w-[500px] h-[100%] max-h-[200px]`}>
 
                 <input type="number"
                     id="inputValor"
@@ -35,7 +35,7 @@ export const Modal = () => {
                     autoFocus
                 />
 
-                <button onClick={add} className="p-3 border font-bold hover:scale-110 border-gray-500 rounded-md mt-5 bg-[#207] text-gray-300" >APOSTE</button>
+                <button onClick={add} className="p-3 border-4 font-bold hover:scale-110 border-[#3d7df5] rounded-md mt-5 bg-[#1808ff] text-white" >APOSTE</button>
 
             </div>
         </div>

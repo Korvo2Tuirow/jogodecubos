@@ -5,10 +5,13 @@ import { NumContext } from "./ContextNumRandom";
 export const Container = () => {
 
     const Ctx = useContext(NumContext);   
+
+
     
     useEffect(()=>{
      Ctx?.setAnima("anima")  
-     console.log(Ctx?.fezTrio);   
+     console.log(Ctx?.fezTrio); 
+       
     },Ctx?.numRandomProv)
 
     return (
